@@ -1,0 +1,9 @@
+streamlit
+streamlit-chat
+langchain
+python-dotenv
+langchain-community
+streamlit
+langchain-experimental
+langchain-openai
+python-dotenv
