@@ -44,8 +44,6 @@ retriever = vectorstore.as_retriever(search_kwargs={"k": total_vectors})
 def retrieve_response(question: str, chat_history: list = None):
     # Using the retriever to get relevant context
     results = retriever.get_relevant_documents(question)
-    # If you need to format or process the results before passing them to the model
-    # you can adjust the code here
     return results
 
 llm = ChatOpenAI(temperature=0, model_name="gpt-4o")
